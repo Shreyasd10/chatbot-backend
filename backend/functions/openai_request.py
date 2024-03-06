@@ -2,7 +2,7 @@ import openai
 from decouple import config
 from openai import OpenAI
 
-from backend.functions.database import get_recent_messages
+from functions.database import get_recent_messages
 
 client = openai.Client(api_key=config("OPEN_AI_KEY"))
 
