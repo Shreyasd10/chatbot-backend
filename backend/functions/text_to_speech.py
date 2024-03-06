@@ -15,6 +15,8 @@ def convert_text_to_speech(message):
         }
     }
 
+    print("Body: ", body)
+
     voice_rachel = "21m00Tcm4TlvDq8ikWAM"
 
     # Construct request headers and url
@@ -30,4 +32,5 @@ def convert_text_to_speech(message):
     if response.status_code == 200:
         return response.content
     else:
+        print(f"Error: {response.status_code} - {response.text}")
         return
