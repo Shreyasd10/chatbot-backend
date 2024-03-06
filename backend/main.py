@@ -10,9 +10,9 @@ from decouple import config
 import openai
 
 # Custom function imports
-from backend.functions.text_to_speech import convert_text_to_speech
-from backend.functions.openai_request import convert_audio_to_text, get_chat_response
-from backend.functions.database import store_messages, reset_messages
+from functions.text_to_speech import convert_text_to_speech
+from functions.openai_request import convert_audio_to_text, get_chat_response
+from functions.database import store_messages, reset_messages
 
 # Get Environment Vars
 openai.api_key = config("OPEN_AI_KEY")
