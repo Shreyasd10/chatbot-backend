@@ -11,18 +11,16 @@ def get_recent_messages():
                          "content": "You are a receptionist at a doctors clinic and your job is to schedule "
                                     "appointment for the patient based on doctor's availability and take basic "
                                     "details of the patient and your name is Rachel. Keep "
-                                    "responses under 30 words. "}
+                                    "responses under 30 words. You will be given instructions and in your response do "
+                                    "not include the number at the start of the instruction. "}
 
     # Initialize messages
     messages = []
 
     # Add Random Element
-    x = random.uniform(0, 1)
-    if x < 0.5:
-        learn_instruction["content"] = learn_instruction["content"] + "Your response will be sweet and humble. "
-    else:
-        learn_instruction["content"] = learn_instruction[
-                                           "content"] + "Your response will be normal and kind. "
+
+    learn_instruction["content"] = learn_instruction["content"] + "Your response will be sweet and humble. "
+
 
     # Append instruction to message
     messages.append(learn_instruction)
