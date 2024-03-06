@@ -26,6 +26,7 @@ origins = [
     "http://localhost:5174",
     "http://localhost:4173",
     "http://localhost:3000",
+    "https://chatbot-ui-b7x8.onrender.com"
 ]
 
 # CORS - Middleware
